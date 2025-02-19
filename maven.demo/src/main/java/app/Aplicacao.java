@@ -66,17 +66,12 @@ public class Aplicacao
 		System.out.println(" 5 - Sair      " );
 	} // end menu ( )
 	
-	// funcao para listar todos os usuarios
 	public static void listarLocatarios( LocatarioDAO locatarioDAO ) 
 	{
 
 		List<Locatario> locatarios;
 		
 		System.out.println( "\n*****LISTA*****" );
-		
-		System.out.println( "1 - Listar." );
-		System.out.println( "2 - Listar usuario ordenado por codigo." );
-		System.out.println( "3 - Listar usuario ordenado por login." );
 			locatarios = locatarioDAO.get();
 			for (Locatario u : locatarios) 
 			{
