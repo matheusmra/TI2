@@ -43,11 +43,11 @@ public class Aplicacao
 				atualizarLocatario(locatarioDAO, locatario  );
 				break;
 			case 5:
-				System.out.printf( "\n%s\n" , "Programa encerrado." );
+				System.out.println("Programa encerrado." );
 				break;
 				
 			default:
-				System.out.printf( "\n%s\n" , "ERRO: Opcao Invalida" );
+				System.out.println("ERRO: Opcao Invalida");
 				break;
 			} // end switch case
 		}while ( opcao != 5 ); // end do while
@@ -118,7 +118,7 @@ public class Aplicacao
         
 		if ( locatarioDAO.insert(locatario) ) 
         {
-            System.out.println( "Inserção com sucesso -> " + locatario.toString() );
+            System.out.println( "Locatario cadastrado " + locatario.toString() );
         } else {
             System.out.println( "Falha ao inserir locatario." );
         } // end if
@@ -169,7 +169,7 @@ public class Aplicacao
         System.out.print("Informe o id do locatario a ser excluído: ");
         id = sc.nextInt();
         
-        System.out.println( "Tem certeza que deseja excluir o locatario? (S/N): " );
+        System.out.println( "Confirma a ação? (S/N): " );
         confirmar = sc.next().charAt( 0 );
         
         if( confirmar == 'S' || confirmar == 's' )
