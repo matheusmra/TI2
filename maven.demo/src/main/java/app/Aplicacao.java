@@ -122,7 +122,7 @@ public class Aplicacao
         } else {
             System.out.println( "Falha ao inserir locatario." );
         } // end if
-    } // end inserirUsuario ( )  
+    } // end inserirLocatario ( )  
     
    
     private static void atualizarLocatario( LocatarioDAO locatarioDAO, Locatario locatario ) 
@@ -157,7 +157,7 @@ public class Aplicacao
         {
             System.out.println("Locatario não encontrado.");
         } // end if
-    } // end atualizarUsuario ( )
+    } // end atualizarLocatario ( )
     
     private static void excluirLocatario( LocatarioDAO locatarioDAO, Locatario locatario ) 
     {
@@ -191,6 +191,6 @@ public class Aplicacao
         	System.out.println( "\nERRO: Opcao invalida" );
         } // end if
         
-    } // end excluirUsuario ( )
+    } // end excluirLocatario ( )
 	
 } // end class
