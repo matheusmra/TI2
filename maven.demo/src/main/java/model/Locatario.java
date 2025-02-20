@@ -54,6 +54,6 @@ public class Locatario {
 
 	@Override
 	public String toString() {
-		return "Usuario [ id = " + id + ", nome = " + nome + ", endereco = " + endereco + ", sexo = " + sexo + " ]";
+		return "Locatario [ id = " + id + ", nome = " + nome + ", endereco = " + endereco + ", sexo = " + sexo + " ]";
 	}	
 }
